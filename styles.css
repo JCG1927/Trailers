@@ -189,3 +189,55 @@ color: brown;
 strong:hover{
     color: yellow;
 }
+
+/*Login - Modal*/
+.perfil {
+    border-radius:50%; 
+    /* width:50%;  */
+    /* height: 50%; */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 15px;
+} 
+
+.form-tbx {
+    padding: 10px;
+    margin-left: 18%;
+}
+
+.form-btn {
+    padding-top: 3%;
+}
+
+.form-control{
+    margin-left: 3%;
+    Transition: all 0.5s ease-in-out;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 110%;
+}    
+
+#cabecera-login{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 210%;
+    color: brown;
+}
+
+#login::backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+
+.form-control, .form-button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100%;
+    width: 280px;
+    height: 45px;
+}
+
+Input:hover, button:hover{
+    background-color: brown;
+    color: whitesmoke;
+    border-color: black;
+}

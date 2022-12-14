@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/73a8bb080b.js" crossorigin="anonymous"></script>    
     <title>Trailers</title>
 </head>
 <body>
@@ -29,15 +30,41 @@
             <div class="nav_element">
                 <ul>
                     <li>
-                        <a href="#" class="profile"><span class="material-symbols-outlined">
-                            badge
-                        </span></a>
+                        <a href="#" class="profile">
+                            <button class="material-symbols-outlined" id="abrir-login">
+                                badge
+                            </button>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <main>
+
+        <dialog id="login">
+            <form>
+                <h3 id="cabecera-login">BIENVENIDO</h3>
+                <img class="perfil" src="Img\LuisSoto.png">
+
+                <div class="form-tbx">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" class="form-control" placeholder="Nombre de usuario" required>
+                </div>
+  
+                <div class="form-tbx">
+                    <i class="fa-solid fa-key"></i>    
+                    <input type="password" class="form-control"  placeholder="Contraseña" required>
+                </div>
+  
+                <div class="form-btn">
+                    <button class="form-button" type="submit">Iniciar sesión</button>
+                    <button class="form-button" id="cerrar-login">Salir</button>  
+                </div>
+
+              </form>    
+        </dialog>
+
         <div class="trailers_nav"><h1>Trailers</h1></div>
         <div class="trailers_cont">
             <div class="trailers_movie">
@@ -50,7 +77,7 @@
                                 <li class="title" id="title">Titulo <strong>THE BATMAN</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>04/03/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/FUP3P9_mqvA"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/FUP3P9_mqvA" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -60,7 +87,7 @@
                                     <li class="title" id="title">Titulo <strong>FORREST GUMP</strong></li>
                                     <li class="fecha" id="title">Fecha de lanzamiento <br><strong>06/07/1994</strong></li>
                             </ul>
-                            <a href="https://youtu.be/GIs2gpWpBiQ"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/GIs2gpWpBiQ" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -70,7 +97,7 @@
                                 <li class="title" id="title">Titulo <strong>VIERNES 13</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>09/05/1980</strong></li>
                             </ul>
-                            <a href="https://youtu.be/MfwLgrasoqs"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/MfwLgrasoqs" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -80,7 +107,7 @@
                                 <li class="title" id="title">Titulo <strong>CORAZONES DE ACERO</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>15/10/1994</strong></li>
                             </ul>
-                            <a href="https://youtu.be/lqgfXkSh4x0"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/lqgfXkSh4x0" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -90,7 +117,7 @@
                                 <li class="title" id="title">Titulo <strong>TAXI DRIVER</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>08/02/1976</strong></li>
                             </ul>
-                            <a href="https://youtu.be/FzNFDRgA0wk"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/FzNFDRgA0wk" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -100,7 +127,7 @@
                                 <li class="title" id="title">Titulo <strong>BLADE RUNNER 2049</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>10/6/2017</strong></li>
                             </ul>
-                            <a href="https://youtu.be/FzNFDRgA0wk"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/FzNFDRgA0wk" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -110,7 +137,7 @@
                                 <li class="title" id="title">Titulo <strong>INTERSTELLAR</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>26/10/2014</strong></li>
                             </ul>
-                            <a href="https://youtu.be/FzNFDRgA0wk"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/FzNFDRgA0wk" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="movie">
@@ -120,7 +147,7 @@
                                 <li class="title" id="title">Titulo <strong>SOY LEYENDA</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>14/12/2007</strong></li>
                             </ul>
-                            <a href="https://youtu.be/TXQ7kRnFXS4"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/TXQ7kRnFXS4" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                 </ul>
@@ -136,7 +163,7 @@
                                 <li class="title" id="title">Temporada <strong>6</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>04/09/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/P9WZhGMlDBE"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/P9WZhGMlDBE" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -147,7 +174,7 @@
                                 <li class="title" id="title">Temporada <strong>5</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>15/07/2012</strong></li>
                             </ul>
-                            <a href="https://youtu.be/3oFofYisAko"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/3oFofYisAko"target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -158,7 +185,7 @@
                                 <li class="title" id="title">Temporada <strong>6</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>18/04/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/30RIP7LYPXg"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/30RIP7LYPXg" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -169,7 +196,7 @@
                                 <li class="title" id="title">Temporada <strong>11</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>31/10/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/uwgohmYnDu0"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/uwgohmYnDu0" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -180,7 +207,7 @@
                                 <li class="title" id="title">Temporada <strong>2</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>18/01/2019</strong></li>
                             </ul>
-                            <a href="https://youtu.be/MKw33EBiQQ8"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/MKw33EBiQQ8" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -191,7 +218,7 @@
                                 <li class="title" id="title">Temporada <strong>6</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>04/09/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/YJbpBijpwcU"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/YJbpBijpwcU" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -202,7 +229,7 @@
                                 <li class="title" id="title">Temporada <strong>6</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>30/12/2020</strong></li>
                             </ul>
-                            <a href="https://youtu.be/2LDKmeHnrdI"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/2LDKmeHnrdI" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                     <li class="series">
@@ -213,7 +240,7 @@
                                 <li class="title" id="title">Temporada <strong>6</strong></li>
                                 <li class="fecha" id="title">Fecha de lanzamiento <br><strong>27/02/2022</strong></li>
                             </ul>
-                            <a href="https://youtu.be/NknSkTrOWrk"><button class="button-ver">Ver trailer</button></a>
+                            <a href="https://youtu.be/NknSkTrOWrk" target="_blank"><button class="button-ver">Ver trailer</button></a>
                         </div>
                     </li>
                 </ul>
@@ -230,6 +257,11 @@
                 <li class="personal">
                     <p>Jose Carlos Guerrero De la Cruz
                         2021-1927
+                    </p>
+                </li>
+                <li class="personal">
+                    <p>Diego Olivero Matos
+                        2021-1803
                     </p>
                 </li>
             </ul>
