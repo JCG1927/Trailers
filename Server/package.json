@@ -6,14 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "db": "mongod --dbpath c:\\data",
-    "start": "node ./src/routers/index.js",
-    "dev": "nodemon ./src/routers/index.js"
+    "start": "node ./routes/index.js",
+    "dev": "nodemon ./routes/index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCG1927/Trailers.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCG1927/Trailers/"
+  },
+  "homepage": "https://github.com/JCG1927/Trailers#readme",
   "dependencies": {
     "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongodb": "^4.12.1",
     "mongoose": "^6.8.0",

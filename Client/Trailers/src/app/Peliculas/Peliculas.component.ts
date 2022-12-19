@@ -1,4 +1,6 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ApiServiceService } from '../ApiService.service';
 
 @Component({
   selector: 'app-Peliculas',
@@ -7,15 +9,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeliculasComponent implements OnInit {
 
-  data = {
-    img1:"https://www.ecartelera.com/carteles/11100/11185/001_m.jpg",
+
+
+
+  
+
+  constructor(private _servicioPeliculas:ApiServiceService, private http:HttpClient) { 
+    
+  
   }
 
+  lista:any = [
+
+  ]
 
 
-  constructor() { }
+  getData(){
+    this._servicioPeliculas.getData().subscribe(res=>{
+      this.lista = res
+    })
+  }
 
   ngOnInit() {
+
+    this._servicioPeliculas.getTrailers().subscribe((res:any)=>{
+      console.log(res)
+      this.lista = res
+  });
+
+    
+  
+  
   }
+
+  
+  
 
 }

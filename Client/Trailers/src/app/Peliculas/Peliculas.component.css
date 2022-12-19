@@ -51,6 +51,17 @@ padding-left: 10px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: brown;
 }
+
+.trailers_nav{
+    margin-top: 70px;
+    background-color: red;
+    width: 100%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
 .movie-img{
     width: 150px;
     height: 200px;

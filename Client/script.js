@@ -16,3 +16,12 @@ cerrarLogin.addEventListener("click",()=>
 {
     login.close();
 })
+
+fetch(url, (req, res)=>{
+    res = a     
+})
+
+document.getElementById('id del div')
+
+let a = []
+
