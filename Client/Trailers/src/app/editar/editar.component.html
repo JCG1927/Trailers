@@ -1,0 +1,108 @@
+<div class="container">]
+  <div class=" text-center mt-5 ">
+
+    <h1 style="color:white;">Editar Trailer</h1>
+
+
+  </div>
+
+
+  <div class="row ">
+    <div class="col-lg-7 mx-auto">
+      <div class="card mt-2 mx-auto p-4 bg-light">
+        <div class="card-body bg-light">
+
+          <div class = "container">
+            <form id="contact-form" role="form" >
+
+
+
+              <div class="controls">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name">Titulo de la pelicula *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Introduzca el titulo *" required="required" data-error="Firstname is required." [(ngModel)]="movie.title">
+
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname">Director *</label>
+                      <input id="form_last name" type="text" name="surname" class="form-control" placeholder="Introduzca el director  *" required="required" data-error="Lastname is required." [(ngModel)]="movie.director">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_date"  style="margin-top: 5px">Fecha de lanzamiento *</label>
+                      <input id="form_date" type="input" name="date" class="form-control"  required="required" data-error="Valid email is required." [(ngModel)]="movie.date">
+
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname" style="margin-top: 5px">Reseña</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="*" required="required" data-error="Lastname is required." [(ngModel)]="movie.review">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname" style="margin-top: 5px">Enlace del trailer</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Introduzca el enlace *" required="required" data-error="Lastname is required." [(ngModel)]="movie.trailersUrl">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname" style="margin-top: 5px">Actores</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Introduzca los actores *" required="required" data-error="Lastname is required." [(ngModel)]="movie.actors">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname" style="margin-top: 5px">Enlace de la foto de portada</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Introduzca el enlace *" required="required" data-error="Lastname is required." [(ngModel)]="movie.imagesUrl">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message"  style="margin-top: 8px">Descripcion *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Describa la pelicula * " rows="4" required="required" data-error="Oops algo salio mal" [(ngModel)]="movie.description"></textarea
+                      >
+                    </div>
+
+                  </div>
+
+
+                  <div class="col-md-12">
+
+                    <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                            " value="Guardar cambios" >
+
+                  </div>
+
+                </div>
+
+
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.8 -->
+
+    </div>
+    <!-- /.row-->
+
+  </div>
+</div>
